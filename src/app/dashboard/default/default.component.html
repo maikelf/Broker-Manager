@@ -1,0 +1,10 @@
+<app-header (toggleSideBarEmit) = "sideBarToggle($event)"></app-header>
+<mat-drawer-container>
+  <mat-drawer class="sidebar-expande" mode="side" [opened]="sideNavStatus">
+    <app-side-bar></app-side-bar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+<app-footer></app-footer>

@@ -1,0 +1,23 @@
+.login-content {
+    text-align: center;
+}
+.imlog {
+    width: 30%;
+}
+.login-card {
+    max-width: 600px;
+    margin: 60px auto 20px;
+    padding: 20px;
+}
+.login-input {
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+    .imlog {
+      width: 80%;
+    }
+    .login-card {
+        margin: 30px auto 20px;
+    }
+}

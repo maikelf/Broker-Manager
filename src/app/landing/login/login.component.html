@@ -1,0 +1,29 @@
+<div fxlayout="row" fxLayoutAlign="center-center" class="login-content">
+    <div fxflex="100">
+      <img src="../../../assets/maintruck.png" class="imlog" />
+      <h3>LOREN ITSUM</h3>
+      <div>
+        <mat-card class="login-card">
+          <div><h5>Log in</h5></div>
+          <div>
+            <form>
+              <mat-form-field class="login-input">
+                <mat-label>User</mat-label>
+                <input matInput placeholder="user@company.com">
+              </mat-form-field>
+              <mat-form-field class="login-input">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput>
+              </mat-form-field>
+              <div style="margin-top:20px">
+                <button mat-raised-button color="primary" type="submit">Log In</button>
+              </div>
+            </form>
+          </div>
+          <div style="margin-top:30px">
+            Are you new customer? <a [routerLink]="['/register']"><button mat-button color="primary">Sign up</button></a>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+</div>
